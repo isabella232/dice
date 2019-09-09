@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+    <title>Dice Game - Welley</title>
+    <style>
+        body {
+            margin-top: 10px
+        }
+        hr {
+            border: 1px solid black;
+        }
+        #status {
+            background-color: cornflowerblue;
+            border-radius: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form action="/button">
+        <h2 th:text="'Welcome to a quick game of CRAPS!'"></h2>
+        <hr>
+        <h4 th:text="'' + ${displayConditions}"></h4>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <h4 th:text="'You rolled ' + ${diceNumbers}"></h4>
+                <button class="btn btn-warning btn-lg" type="submit">ROLL</button>
+                <br><br>
+            </div>
+            <div class="col-md-6">
+                <h4 th:text="'Game message:'"></h4>
+                <div id="status">
+                    <h5 th:text="'' + ${displayMessage}"></h5>
+                </div><br>
+            </div>
+        </div>
+        <br><br>
+        <p>Welley Loc 2019. Created for TTS project assignment.</p>
+    </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
