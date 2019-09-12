@@ -1,5 +1,7 @@
 ### TTS Dice Game
 
+[Live on Heroku](https://glacial-forest-29319.herokuapp.com/game)
+
 Import on IntelliJ IDEA with Maven, run the application and open localhost:8080/game in browser.
 
 <img src="https://github.com/welleyloc/dice/blob/master/application%20snippet.png?raw=true" width="500">
