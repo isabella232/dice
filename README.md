@@ -1,6 +1,6 @@
-### TTS Dice Game
+### TTS Dice Game - [Live on Heroku](https://glacial-forest-29319.herokuapp.com/game)
 
-[Live on Heroku](https://glacial-forest-29319.herokuapp.com/game)
+Please allow some time for the Heroku server to start up. It sleeps every half hour of inactivity
 
 Import on IntelliJ IDEA with Maven, run the application and open localhost:8080/game in browser.
 
